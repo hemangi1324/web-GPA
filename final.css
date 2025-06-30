@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+#homepage,
+#Group1,
+#Group2 {
+  height: 100%;
+  overflow: auto;
+  transition: flex 0.5s ease;
+}
+
+/* Default state: homepage full, groups hidden */
+#homepage {
+  flex: 1 1 100%;
+  background-color: #1c1930; 
+  /* background-image: url("https://t3.ftcdn.net/jpg/12/48/23/84/360_F_1248238462_BPkNBD7RgbsOQ9JbfpxpPb1BuyIPztVU.jpg"); */
+  background-size: cover;
+  /* opacity: 0.5; */
+  background-repeat: no-repeat;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: large;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#Group1,
+#Group2 {
+  flex: 0 0 0;
+  background-color: #1e1d3a;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* When Group1 is open */
+.container.show-group1 #homepage {
+  flex: 1 1 20%;
+}
+
+.container.show-group1 #Group1 {
+  flex: 1 1 80%;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* When Group2 is open */
+.container.show-group2 #homepage {
+  flex: 1 1 20%;
+}
+
+.container.show-group2 #Group2 {
+  flex: 1 1 80%;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Button styling */
+#G1, #G2 {
+  height: 40px;
+  width: 85px;
+  color: #141414;
+  background-color: #7d4ef3;
+  
+  border-radius: 6px;
+  box-shadow: rgb(77, 75, 75);
+  border-color: rgb(63, 59, 59);
+  border-width: 1.5px;
+  margin: 20px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.toflex {
+  display: flex;
+  margin: 20px;
+  color: #1e1e1e;
+  font-size: large;
+}
+
+.toflex input {
+    background-color: rgb(130, 181, 252);
+    height: 30px; 
+    width: 100px;
+    border-radius: 5px;
+    box-shadow: rgb(77, 75, 75);
+    border-color: rgb(63, 59, 59);
+    border-width: 1px;
+}
+
+::placeholder{
+    text-align: center;
+}
+
+.toflex h4{
+    height: 30px; 
+    width: 70px; 
+    background-color:#8f56ec; 
+    text-align: center; 
+    place-items: center;
+    border-radius: 4px; 
+    margin-right: 10px;
+    padding-top: 4.5px;
+}
+
+#msg {
+  display: none;
+  text-align: center;
+  padding: 20px;
+    background-color: #1c1930;
+    height: 100%;
+    width: 100%;
+}
+
+.rtn{
+    height: 30px; 
+    width: 50px;
+    margin-left: 20px;
+    background-color: rgb(246, 116, 116);
+    border-radius: 5px;
+}
+
+#calculate1, #calculate2{
+    height: 40px; 
+    width: 150px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: rgb(101, 230, 148);
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} 

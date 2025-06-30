@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGPA calculator</title>
+    <link rel="stylesheet" href="final.css">
+</head>
+<body>
+    <!-- Home page -->
+     <div class="container">
+    <div id="homepage">
+        <h1 style="margin: 20px; color:#90caf9; margin-top: 100px; font-size: larger;">Welcome !! </h1>
+        <h2 style="margin-bottom: 40px; color:#e1b9fc;"><i>To SGPA calculator</i></h2>
+        <h4 style="margin: 25px; color: #bbbbbb;">Please select your Group number</h4>
+        <button type="button" id="G1"><b>Group 1</b></button><br>
+        <button type="button" id="G2"><b>Group 2</b></button>
+    </div>
+    <!-- page for group 1 -->
+    <div id="Group1" >
+        <div class="toflex">
+            <h4 >SIC </h4>
+            <div class="insic">
+                <input type="number" id="SICis1" placeholder="Insem">
+                <input type="number" id="SICes1" placeholder="EndSem">
+                <input type="number" id="SICcie1" placeholder="CIE">
+                <input type="number" id="SICtw1" placeholder="TermWork">
+                <input type="number" id="SICatt1" placeholder="attendance">
+            </div>
+        </div>
+
+        <div class="toflex">
+            <h4>OOPC</h4>
+            <div class="inoopc">
+                <input type="number" id="OOPCis1" placeholder="Insem">
+                <input type="number" id="OOPCes1" placeholder="EndSem">
+                <input type="number" id="OOPCcie1" placeholder="CIE">
+                <input type="number" id="OOPCtw1" placeholder="TermWork">
+                <input type="number" id="OOPCatt1" placeholder="attendance">
+            </div>
+        </div>
+
+        <div class="toflex">
+            <h4>CST</h4>
+            <div id="incst">
+                <input type="number" id="CSTis" placeholder="Insem">
+                <input type="number" id="CSTes" placeholder="EndSem">
+                <input type="number" id="CSTcie" placeholder="CIE">
+                <input type="number" id="CSTtw" placeholder="TermWork">
+                <input type="number" id="CSTatt" placeholder="attendance">
+            </div>
+        </div>          
+
+        <div class="toflex">
+            <h4>CGD</h4>
+            <div id="incgd">
+                <input type="number" id="CGDis" placeholder="Insem">
+                <input type="number" id="CGDes" placeholder="EndSem">
+                <input type="number" id="CGDcie" placeholder="CIE">
+                <input type="number" id="CGDtw" placeholder="TermWork">
+                <input type="number" id="CGDatt" placeholder="attendance">
+            </div>
+        </div>
+        
+        <div class="toflex">
+            <h4>ESE</h4>
+            <div id="inese">
+                <input type="number" id="ESEis" placeholder="Insem">
+                <input type="number" id="ESEes" placeholder="EndSem">
+                <input type="number" id="ESEcie" placeholder="CIE">
+                <input type="number" id="ESEatt" placeholder="attendance">
+            </div>
+        </div>
+        
+        <div class="toflex">
+            <h4>SS</h4>
+            <div id="inss">
+                <input type="number" id="SScie" placeholder="CIE">
+                <input type="number" id="SStw" placeholder="TermWork">
+                <input type="number" id="SSatt" placeholder="attendance">
+            </div>
+        </div>
+        
+        <div class="toflex">
+            <h4>IIDTL</h4>
+            <div id="iniidtl">
+                <input type="number" id="IIDTLtw" placeholder="TermWork">
+            </div>
+        </div>
+        
+        <div class="toflex">
+            <h4>NPTEL</h4>
+            <div id="innptel">
+                <input type="number" id="NPTELtw" placeholder="TermWork">
+            </div>
+        </div>
+        
+        <div class="toflex">
+            <h4>CCA</h4>
+            <div class="incca">
+                <input type="number" id="CCAtw1" placeholder="TermWork"> 
+            </div>
+        </div>
+        
+        <button type="button" class="rtn">Back</button>
+        <button type="button" id="calculate1">Calculate CGPA</button>
+    </div>
+  <!-- page for group 2 -->
+    <div id="Group2" >
+        <div class="toflex">
+            <h4>SIC</h4>
+            <div id="insic">
+                <input type="number" id="SICis2" placeholder="Insem">
+                <input type="number" id="SICes2" placeholder="EndSem">
+                <input type="number" id="SICcie2" placeholder="CIE">
+                <input type="number" id="SICtw2" placeholder="TermWork">
+                <input type="number" id="SICatt2" placeholder="attendance">
+            </div>
+        </div>
+
+        <div class="toflex">
+            <h4>OOPC</h4>
+            <div id="inoopc">
+                <input type="number" id="OOPCis2" placeholder="Insem">
+                <input type="number" id="OOPCes2" placeholder="EndSem">
+                <input type="number" id="OOPCcie2" placeholder="CIE">
+                <input type="number" id="OOPCtw2" placeholder="TermWork">
+                <input type="number" id="OOPCatt2" placeholder="attendance">
+            </div>
+        </div>
+
+        <div class="toflex">
+            <h4>QP</h4>
+            <div id="inqp">
+                <input type="number" id="QPis" placeholder="Insem">
+                <input type="number" id="QPes" placeholder="EndSem">
+                <input type="number" id="QPcie" placeholder="CIE">
+                <input type="number" id="QPtw" placeholder="TermWork">
+                <input type="number" id="QPatt" placeholder="attendance">
+            </div>
+        </div>          
+
+        <div class="toflex">
+            <h4>MFR</h4>
+            <div id="inmfr">
+                <input type="number" id="MFRis" placeholder="Insem">
+                <input type="number" id="MFRes" placeholder="EndSem">
+                <input type="number" id="MFRcie" placeholder="CIE">
+                <input type="number" id="MFRtw" placeholder="TermWork">
+                <input type="number" id="MFRatt" placeholder="attendance">
+            </div>
+        </div>
+        
+        <div class="toflex">
+            <h4>IEEE</h4>
+            <div id="inieee">
+                <input type="number" id="IEEEis" placeholder="Insem">
+                <input type="number" id="IEEEes" placeholder="EndSem">
+                <input type="number" id="IEEEcie" placeholder="CIE">
+                <input type="number" id="IEEEtw" placeholder="TermWork">
+                <input type="number" id="IEEEatt" placeholder="attendance">
+            </div>
+        </div>
+        
+        <div class="toflex">
+            <h4>IKS</h4>
+            <div id="iniks">
+                <input type="number" id="IKScie" placeholder="CIE">
+                <input type="number" id="IKStw" placeholder="TermWork">
+                <input type="number" id="IKSatt" placeholder="attendance"> 
+            </div>
+        </div>
+        
+        <div class="toflex">
+            <h4>FAB</h4>
+            <div id="infab">
+                <input type="number" id="FABtw" placeholder="TermWork">
+            </div>
+        </div>
+        
+        <div class="toflex">
+            <h4>CCA</h4>
+            <div id="incca">
+                <input type="number" id="CCAtw2" placeholder="TermWork"> 
+            </div>
+        </div>
+        
+        <button type="button" class="rtn">Back</button>
+        <button type="button" id="calculate2">Calculate CGPA</button>
+    </div>
+    </div>
+    <!-- Message for marks reveal -->
+    <div id="msg" style="display: none;">
+       
+        <h2 style="margin-top: 100px; color: #90caf9;">
+            CONGRATULATIONS !!!
+        </h2>
+        <h1 id="changes" style="margin-top: 30px; color: #cd8efa;">
+            Your SGPA is 
+        </h1>
+        <h6 style="margin-top: 20px; color: #bbbbbb;">
+            Keep going !!
+        </h6>
+        <button type="button" class="rtn" style="margin-top: 50px; margin-right: 25px;">Back</button>
+       
+    </div>
+
+    <script src="final.js"></script>
+</body>
+</html>
